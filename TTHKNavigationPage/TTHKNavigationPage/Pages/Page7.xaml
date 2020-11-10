@@ -4,9 +4,9 @@
              x:Class="TTHKNavigationPage.Pages.Page7">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ImageButton Source="torchOFF.png"
+                         HorizontalOptions="Center"
+                         VerticalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

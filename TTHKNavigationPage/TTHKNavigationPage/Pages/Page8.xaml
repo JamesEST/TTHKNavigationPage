@@ -4,9 +4,10 @@
              x:Class="TTHKNavigationPage.Pages.Page8">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="EntryText" Placeholder="Введи текст.."/>
+            <Label x:Name="VolumeValue" Text="Уровень громкости : 1" Font="20"/>
+            <Stepper x:Name="VolumeStepper" Maximum="1" Increment="0.1" HorizontalOptions="Fill" Value="1" ValueChanged="Stepper_OnValueChanged" />
+            <Button HorizontalOptions="Fill" Text="Прослушать" Clicked="Button_OnClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
