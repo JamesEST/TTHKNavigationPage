@@ -18,45 +18,45 @@ namespace TTHKNavigationPage
             _buttonOne = new Button()
             { 
                 Text = "Page1",
-                BorderRadius = 25
+                CornerRadius = 25
             };
             _buttonTwo = new Button()
             {
-                Text = "Vibrate module",
-                BorderRadius = 25
+                Text = "Вибратор",
+                CornerRadius = 25
             };
             _buttonThree = new Button()
             {
                 Text = "Page3",
-                BorderRadius = 25
+                CornerRadius = 25
             };
             _buttonFour = new Button()
             {
                 Text = "Page4",
-                BorderRadius = 25
+                CornerRadius = 25
             };
             _buttonFive = new Button()
             {
                 Text = "Page5",
-                BorderRadius = 25
+                CornerRadius = 25
             };
             _buttonSix = new Button()
             {
                 Text = "Page6",
-                BorderRadius = 25
+                CornerRadius = 25
             };
             _buttonSeven = new Button()
             {
-                Text = "Flashlight module",
-                BorderRadius = 25
+                Text = "Фонарик",
+                CornerRadius = 25
             };
             _buttonEight = new Button()
             {
                 Text = "Text to Speech",
-                BorderRadius = 25
+                CornerRadius = 25
             };
             StackLayout st = new StackLayout();
-            BackgroundColor = Color.White;
+       
             st.Children.Add(_buttonOne);
             st.Children.Add(_buttonTwo);
             st.Children.Add(_buttonThree);
@@ -86,7 +86,7 @@ namespace TTHKNavigationPage
                 case "Page1":
                     await Navigation.PushAsync(new Page1());
                     break;
-                case "Vibrate module":
+                case "Вибратор":
                     await Navigation.PushAsync(new Page2());
                     break;
                 case "Page3":
@@ -101,7 +101,7 @@ namespace TTHKNavigationPage
                 case "Page6":
                     await Navigation.PushAsync(new Page6());
                     break;
-                case "Flashlight module":
+                case "Фонарик":
                     await Navigation.PushAsync(new Page7());
                     break;
                 case "Text to Speech":

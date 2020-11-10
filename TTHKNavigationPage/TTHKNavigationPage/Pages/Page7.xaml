@@ -4,9 +4,14 @@
              x:Class="TTHKNavigationPage.Pages.Page7">
     <ContentPage.Content>
         <StackLayout>
-            <ImageButton Source="torchOFF.png"
-                         HorizontalOptions="Center"
-                         VerticalOptions="CenterAndExpand" />
+
+            <Image x:Name="ImageSourse" Source="torchOFF.png"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
