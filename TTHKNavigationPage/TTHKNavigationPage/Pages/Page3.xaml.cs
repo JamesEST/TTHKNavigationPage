@@ -12,9 +12,15 @@ namespace TTHKNavigationPage.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page3 : ContentPage
     {
+        CompassViewModel vm;
         public Page3()
         {
             InitializeComponent();
+            BindingContext = vm = new CompassViewModel();
+            vm.StartCompass();
         }
+        
+
+       
     }
 }

@@ -17,7 +17,7 @@ namespace TTHKNavigationPage
             //InitializeComponent();
             _buttonOne = new Button()
             { 
-                Text = "Page1",
+                Text = "Компас",
                 CornerRadius = 25
             };
             _buttonTwo = new Button()
@@ -27,32 +27,32 @@ namespace TTHKNavigationPage
             };
             _buttonThree = new Button()
             {
-                Text = "Page3",
+                Text = "Фонарик",
                 CornerRadius = 25
             };
             _buttonFour = new Button()
             {
-                Text = "Page4",
+                Text = "Text to Speech",
                 CornerRadius = 25
             };
             _buttonFive = new Button()
             {
-                Text = "Page5",
+                Text = "",
                 CornerRadius = 25
             };
             _buttonSix = new Button()
             {
-                Text = "Page6",
+                Text = "",
                 CornerRadius = 25
             };
             _buttonSeven = new Button()
             {
-                Text = "Фонарик",
+                Text = "",
                 CornerRadius = 25
             };
             _buttonEight = new Button()
             {
-                Text = "Text to Speech",
+                Text = "",
                 CornerRadius = 25
             };
             StackLayout st = new StackLayout();
@@ -83,29 +83,29 @@ namespace TTHKNavigationPage
             Button btn = sender as Button;
             switch (btn.Text)
             {
-                case "Page1":
-                    await Navigation.PushAsync(new Page1());
+                case "Компас":
+                    await Navigation.PushAsync(new Page3());
                     break;
                 case "Вибратор":
                     await Navigation.PushAsync(new Page2());
-                    break;
-                case "Page3":
-                    await Navigation.PushAsync(new Page3());
-                    break;
-                case "Page4":
-                    await Navigation.PushAsync(new Page4());
-                    break;
-                case "Page5":
-                    await Navigation.PushAsync(new Page5());
-                    break;
-                case "Page6":
-                    await Navigation.PushAsync(new Page6());
                     break;
                 case "Фонарик":
                     await Navigation.PushAsync(new Page7());
                     break;
                 case "Text to Speech":
                     await Navigation.PushAsync(new Page8());
+                    break;
+                case "m":
+                    await Navigation.PushAsync(new Page5());
+                    break;
+                case "mm":
+                    await Navigation.PushAsync(new Page6());
+                    break;
+                case "mmm":
+                    await Navigation.PushAsync(new Page1());
+                    break;
+                case "mmmm":
+                    await Navigation.PushAsync(new Page4());
                     break;
             }
 
